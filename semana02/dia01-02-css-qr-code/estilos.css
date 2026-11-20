@@ -2,6 +2,12 @@ body {
     background-color: hsl(212, 45%, 89%);
     font-size: 15px;
 
+    /* Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 main {
     /*border: 1px solid red;*/
