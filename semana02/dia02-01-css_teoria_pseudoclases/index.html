@@ -84,7 +84,7 @@
             font-family: inherit;
         }
 
-        /* Cascada */
+        /* Cascada - decide que estilo gana cuando hay conflictos, depende del orden, especificado y herencia*/
 
         header {
             color: green;
@@ -105,6 +105,41 @@
         p {
             color: blueviolet /* Gana esta */
         }
+
+        /* Unidades de medida */
+        /* 
+        Absolutas: px, cm, in -> siempre miden lo mismo
+        Relativas: em, rem, %, vw, vh (+ modernas y flexibles) -> siempre depende de otra medida */
+        h1 {
+            font-size: 2rem;
+        } 
+        .portada {
+            height: 100vh; /* todo el alto de la ventana */
+            background-color: lightblue;
+        }
+        .caja {
+            width: 50%;
+            background-color: gold;
+        }
+
+        h2  {
+            color: tomato;
+            color: #ff6347;
+            color: rgb(255, 99, 71);
+            color: hsl(9,100%,64%);
+        }
+
+        /* TExto y tamaño del boton; el color de fondo lo pone el CSS de la leccion*/
+        button {color: white; padding: 12px 24px; border: none;}
+        button  { background-color: hsl(169, 82%, 27%);}
+        button:hover    {background-color: hsl(169, 82%, 20%);}
+
+        /* Transparencia */
+
+        h1  {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -135,6 +170,17 @@
     </section>
     <h1> CASCADA </h1>
     <header id="cabecera" class="texto">¿De qué color soy?</header>
-    <P>¿rOJO A AZUL? gANA LA REGLA ESCRITA AL FINAL</P>
+    <P>¿ROJO A AZUL? gANA LA REGLA ESCRITA AL FINAL</P>
+    
+    <h1>Mido 2rem</h1>
+    <p>yo mido 1rem: el tamaño por defecto del navegador</p>
+    <section class="portada">
+        <div class="caja">Mido la mitad de mi padre</div>
+    </section>
+    
+        <h1>Colores </h1>
+        <h2>Soy color de tomate </h2>
+        <p>Borra tres de las cuatro lineas de color el titulo se vera igual</p>
+        <button>Pasa el cursor por aqui</button>
 </body>
 </html>
