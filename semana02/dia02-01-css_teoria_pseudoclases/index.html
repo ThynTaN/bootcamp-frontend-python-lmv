@@ -83,6 +83,28 @@
             color: inherit;
             font-family: inherit;
         }
+
+        /* Cascada */
+
+        header {
+            color: green;
+        }
+
+        .texto {
+            color: red;
+        }
+
+        #cabecera {
+            color: blue;
+        }
+
+        P {
+            color: red;
+        }
+
+        p {
+            color: blueviolet /* Gana esta */
+        }
     </style>
 </head>
 <body>
@@ -109,7 +131,10 @@
     </article>
     <section>
         <p>Otro párrafo fuera en un section</p>
+        <a href="#"> enlace a mi pagina</a>
     </section>
-
+    <h1> CASCADA </h1>
+    <header id="cabecera" class="texto">¿De qué color soy?</header>
+    <P>¿rOJO A AZUL? gANA LA REGLA ESCRITA AL FINAL</P>
 </body>
 </html>
