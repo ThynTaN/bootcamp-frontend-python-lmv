@@ -1,14 +1,19 @@
 body {
     /* TODO: Añadan la fuente karla donde google fonts */
-    background-color: hsl(148, 38%, 91%);
+    /* background-color: hsl(148, 38%, 91%); */
+    font-family: "karla", sans-serif;
+
+    background-color: hsl(148, 28%, 91%);
 
     display: flex; 
     justify-content: center;
     align-items: center;
+    
     height: 100vh;
 }
+
 .contact-from {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     width: 400px;
     background-color: white;
@@ -18,7 +23,6 @@ body {
 
     padding: 32px;
     border-radius: 16px;
-    
 }
 
 h1 {
@@ -36,7 +40,9 @@ input[typt-text]
 input[typt-text]
 textarea {
     display: flex;
+
     margin-top: 8px;
+
     width: 100%;
     border-radius: 8px;
     border: 1px solid hsl(186, 15%, 59%);
@@ -46,13 +52,56 @@ textarea {
 }
 
 .row {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-input[type=submit] {
+/* TODO:  Darle estilos al boton del formulario */
 
+input[type=submit] {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.query-type {
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+.query-type:hover,
+.query-type:has(input:checked) {
+    border-color: hsl(187, 24%, 22%);
+}
+
+.query-type:has(input:checked) {
+    outline: 2px solid hsl(169, 82%, 27%);
+}
+
+.query-type:focus-within {
+    outline: 2px solid hsl(169, 82%, 27%);
+    outline-offset: 2px;
+}
+
+.query-type input[type=radio] {
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: hsl(169, 82$, 27%);
+    cursor: pointer;
 }
