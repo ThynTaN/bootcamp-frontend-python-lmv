@@ -39,6 +39,50 @@
             background-color: gold;
             color: blue;
         }
+
+        /*Selectores combinados */
+        
+        
+        /*Selector descendientes - NO USARLO SOLO ESTA COMO REFERENCIA*/
+        article p {
+            border: 1px solid red;
+        }
+        
+        /*selectores de hijo directo - NO USARLO SOLO ESTA COMO REFERENCIA*/
+        article > strong {
+            color:  red;
+        }
+        p > strong {
+            color: blue;
+        }
+
+        /* Selector de hermano adyacente*/
+
+        h2 + p {
+            font-weight: bold;
+            color: orange;
+        }
+
+        /* Selector multiples*/
+
+        h1, h2, h3 {
+            background-color: coral;
+        }
+
+        /* Herencia*/
+
+        article {
+            color: red;
+            font-family: Arial;
+        }
+        body {
+            color:  rgb(39, 199, 21);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a, button {
+            color: inherit;
+            font-family: inherit;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +99,17 @@
     <p class="obligatorio">Correo</p>+
 
     <input type="text" placeholder="¿Hola, como estas?"/>
+
+    <h1>Selectores combinados</h1>
+
+    <article>
+        <h2>BIENVENIDO</h2>
+        <P>Mi parrafo</P>
+        <p>Segundo parrafo con <Strong>texto importante</Strong>,</p>
+    </article>
+    <section>
+        <p>Otro párrafo fuera en un section</p>
+    </section>
 
 </body>
 </html>
