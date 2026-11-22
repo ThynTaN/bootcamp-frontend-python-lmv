@@ -6,25 +6,57 @@
   <title>Contac form</title>
 </head>
 <body>
-  Contact Us
+  <main>
+    <h1>Contact Us</h1>
 
-  First Name
+    <form>
+      <div>
+        <label>
+          First Name
+          <input type="text" name="first_name">
+        </label>
+        <label>
+          Last Name
+          <input type="text" name="Last_name">
+        </label>
+      </div>
+      
+      <label>
+        Email Address
+        <input type="email" name="email">
+      </label>
+      
+      <div>
+        Query Type
+        <div>
+          <label>
+            <input type="radio" name="query_type">
+            General Enquiry
+          </label>
+          <label>
+            <input type="radio" name="query_type">
+            Support Request
+          </label>
+        </div>
+      </div>
+      
+      <label>
+        Message
+        <textarea name="Message" id=""></textarea>
+      </label>
+      
+      <label>
+        <input type="checkbox" name="consent">
+        I consent to being contacted by the team
+      </label>
+      
+      <input type="Submit" value="Submit">
   
-  Last Name
-  
-  Email Address
-  
-  Query Type
-  General Enquiry
-  Support Request
-  
-  Message
-  
+    </form>
 
-  I consent to being contacted by the team
-  
-  Submit
- 
+   
+  </main>
+
   
 </body>
 </html>
