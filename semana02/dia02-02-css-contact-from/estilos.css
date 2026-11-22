@@ -1,4 +1,5 @@
 body {
+    /* TODO: Añadan la fuente karla donde google fonts */
     background-color: hsl(148, 38%, 91%);
 
     display: flex; 
@@ -24,4 +25,34 @@ h1 {
     margin: 0;
     margin-bottom: 32px;
     color: hsl(187, 24%, 22%);
+}
+
+label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+input[typt-text]
+input[typt-text]
+textarea {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+
+    box-sizing: border-box;
+}
+
+.row {
+    border: 1px solid blue;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+input[type=submit] {
+
 }
