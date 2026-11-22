@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contac form</title>
-  <link rel="stylesheet" href="estilo.css">
+  <title>Contact form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <main class="Contact-form">
+  <main class="contact-form">
     <h1>Contact Us</h1>
 
     <form>
-      <div class="rom">
+      <div class="row">
         <label>
           First Name
           <input type="text" name="first_name">
         </label>
+
         <label>
           Last Name
           <input type="text" name="Last_name">
@@ -30,12 +34,12 @@
       
       <div>
         Query Type
-        <div class="rom">
-          <label>
+        <div class="row">
+          <label class="query-type">
             <input type="radio" name="query_type">
             General Enquiry
           </label>
-          <label>
+          <label class="query-type">
             <input type="radio" name="query_type">
             Support Request
           </label>
@@ -45,15 +49,15 @@
 
       <label>
         Message
-        <textarea name="Message"></textarea>
+        <textarea name="message"></textarea>
       </label>
       
       <label>
-        <input type="checkbox" name="consent">
+        <input type="checkbox" name="consent"/>
         I consent to being contacted by the team
       </label>
       
-      <input type="Submit" value="Submit"/>
+      <input type="submit value="Submit"/>
   
     </form>
 

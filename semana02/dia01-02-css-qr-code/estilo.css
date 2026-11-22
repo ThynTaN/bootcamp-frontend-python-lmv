@@ -1,0 +1,47 @@
+body {
+    background-color: hsl(148, 38%, 91%);
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact-form {
+    border: 1px solid red;
+
+    width: 400px;
+    background-color: white;
+    background-color: #fff;
+    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
+
+    padding: 32px;
+    border-radius: 16px;
+    
+}
+
+h1 {
+    border: 1px solid red;
+
+    margin: 0;
+    margin-bottom: 32px;
+    color: hsl(187, 24%, 22%);
+}
+
+label {
+    display: block;
+    margin-bottom: 16px;
+    
+}
+
+input[type=text] {
+    display: flex;
+
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+    box-sizing: content-box;
+
+}
